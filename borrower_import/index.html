@@ -1,0 +1,1986 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://librarysoftware.co.nz/docs/borrower_import/">
+      
+      
+        <link rel="prev" href="../borrowers/">
+      
+      
+        <link rel="next" href="../circulation/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Importing - Athenaeum documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#importing-borrowers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Athenaeum documentation" class="md-header__button md-logo" aria-label="Athenaeum documentation" data-md-component="logo">
+      
+  <img src="../assets/img/athenaeum_logo_tilted.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Athenaeum documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Importing
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Athenaeum documentation" class="md-nav__button md-logo" aria-label="Athenaeum documentation" data-md-component="logo">
+      
+  <img src="../assets/img/athenaeum_logo_tilted.svg" alt="logo">
+
+    </a>
+    Athenaeum documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logging_in/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logging in
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Athenaeum structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server_automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Catalogue
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Catalogue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalogue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addingitems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding entries to the catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archiving/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archiving (removing) from the catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../takingstock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taking Stock
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Search
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Search
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../searching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desktop search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../searching_web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web search and blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            The Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../styling_the_blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Styling the blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Borrowers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Borrowers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../borrowers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borrowers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Importing
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Importing
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#import-generic-csv-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import generic CSV data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import generic CSV data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specifying-the-field-column-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specifying the field (column) names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aligning-the-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aligning the names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kamar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      KAMAR Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etap-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      eTap API Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eTap API Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-information-comes-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      What information comes over?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bar-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fields-used-by-etap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields used by eTap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-primary-caregiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Primary Caregiver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Primary Caregiver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preserving-email-1-field-for-student-email-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preserving email 1 field for student email addresses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggering-the-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triggering the synchronisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-new-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying New Borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-left-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying “Left” borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Circulation (issuing/returning)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Circulation (issuing/returning)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../circulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issuing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issuing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../returning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Returning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../due_dates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Due date calculations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overdues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overdues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self_issuing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self Issuing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Output
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Output
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../letters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Letters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Miscellaneous
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_library_loans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External library loans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internal fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shortcuts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#import-generic-csv-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import generic CSV data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import generic CSV data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specifying-the-field-column-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Specifying the field (column) names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aligning-the-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aligning the names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kamar-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      KAMAR Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etap-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      eTap API Integration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="eTap API Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How it Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How it Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-information-comes-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      What information comes over?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bar-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar codes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fields-used-by-etap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fields used by eTap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-primary-caregiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Primary Caregiver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Primary Caregiver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#preserving-email-1-field-for-student-email-addresses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Preserving email 1 field for student email addresses
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#triggering-the-synchronisation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Triggering the synchronisation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-new-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying New Borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#identifying-left-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Identifying “Left” borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miscellaneous
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="importing-borrowers">Importing Borrowers</h1>
+<p>As described earlier, borrowers can be any entity to whom you issue items, in accordance with your library policy. Students, Teachers, Rooms, Other Libraries.</p>
+<p>While manually entering borrowers is one way, importing data from a variety of sources is much quicker.</p>
+<p>Imports are generally performed while viewing the list of borrowers and clicking the Utility button (or pressing "u" on the keyboard), clicking the Manipulate/utility tab and the choosing your import.</p>
+<p><img alt="borrower utility import tab" src="../assets/img/borrower_utility_import_tab.png" /></p>
+<p>Athenaeum can import generic CSV (comma separated value) files and can also import particular CSV files from a number of common New Zealand based student management systems.</p>
+<h2 id="import-generic-csv-data">Import generic CSV data</h2>
+<p>Will allow you to import a CSV file into Athenaeum which will then match the data using the bar code and load into the borrower table.</p>
+<p>When you click the import button and choose your file, you are presented with an "import mapping" dialog box. This allows you to align (map) the fields (columns) in the CSV file to the target fields in Athenaeum.</p>
+<p><img alt="Borrower Import map" src="../assets/img/borrower_import_map.png" /> </p>
+<p>There is quite a lot going on with this window and this flexibility allows us to process different kinds of CSV files.</p>
+<p>On the right is the mapping of the import data to the field names in Athenaeum.</p>
+<p>At to top, you can choose to "Add" the data - which is the normal action in these scripted import actions.</p>
+<p>The bottom of the window contains various options you won't need to change in most cases.</p>
+<h3 id="specifying-the-field-column-names">Specifying the field (column) names</h3>
+<p><img alt="specifying the row with the column names" src="../assets/img/borrower_import_column_names.png" /></p>
+<p>The first row of a csv file usually contains the names of the columns of data to be imported. From the "Data" pop up menu, choose "Field names" and the names of the imported columns moves over to the source fields near the middle of the window.</p>
+<h3 id="aligning-the-names">Aligning the names</h3>
+<p>Next, Athenaeum needs to be instructed which fields to align your import data.</p>
+<p>The common SMS systems will likely have names matched up to Athenaeum's field names and you can use the "matching names" option to help align the fields.</p>
+<p><img alt="using Matching Names to quickly aligned pre-named fields" src="../assets/img/borrower_import_matching_names.png" /></p>
+<p>CSV columns that don't exactly match can be aligned manually.</p>
+<p><img alt="manually aligning columns and fields" src="../assets/img/borrower_import_mappings.png" /> </p>
+<p>You specify Target fields by clicking in the position of the target and choosing the target field from the list of fields. The list can be filtered by typing part of the name.</p>
+<p>Here you can see the bar_code column from the CSV is going to the bar_code field in Athenaeum, the name_first to the like named field. Note in this example, name_preferred is skipped (the dialog still shows the early field name of "name_middle" which is no longer used).</p>
+<p>The "year" column does not have an exact equivalent. Athenaeum has "group 1" and "group 2" fields<sup id="fnref:GroupName"><a class="footnote-ref" href="#fn:GroupName">1</a></sup> so the pop-up list of fields is filtered and "group1" selected.</p>
+<h2 id="kamar-integration">KAMAR Integration</h2>
+<p>The KAMAR Student Management System writes data directly to Athenaeum and this feature requires little input from the library (except maybe to swap some fields around depending upon school preferences).</p>
+<h2 id="etap-api-integration">eTap API Integration</h2>
+<p>Athenaeum can receive from eTap a list of your current students and load them automatically into the borrower list in Athenaeum.</p>
+<p>This relieves you of the task of manually entering borrowers with their “year levels” and “rooms” into Athenaeum as well as not having to manually load caregiver details.</p>
+<h3 id="how-it-works">How it Works</h3>
+<p>Each evening your server runs a process that, amongst other things:</p>
+<ul>
+<li>
+<p>requests a list of current students with their caregivers from eTap</p>
+</li>
+<li>
+<p>re-arranges that information for loading into Athenaeum</p>
+</li>
+<li>
+<p>updates or adds that borrower information to your Athenaeum</p>
+</li>
+</ul>
+<h4 id="set-up">Set up</h4>
+<ol>
+<li>
+<p>Each school must be authorised by eTap for this process and your Athenaeum configured behind the scenes to allow this to happen.</p>
+</li>
+<li>
+<p>We - at Athenaeum Library Software - set up the feed, check and adjust your bar codes, do the initial import and run through some data checks with you.</p>
+</li>
+<li>
+<p>You then go to Admin-&gt;Customisation-Proxy/MARC and set your SMS to eTap, enter your MoE number and specify whether to combine emails:</p>
+</li>
+</ol>
+<p><img alt="admin setup for eTap SMS" src="../assets/img/admin_sms_etap.jpg" /></p>
+<h3 id="what-information-comes-over">What information comes over?</h3>
+<p>Athenaeum receives from eTap:</p>
+<ul>
+<li>
+<p>student ID</p>
+</li>
+<li>
+<p>the admin_no if used</p>
+</li>
+<li>
+<p>preferred names and formal names of the students
+    <em>currently, the preferred names are the only names used</em></p>
+</li>
+<li>
+<p>date of birth of the student</p>
+</li>
+<li>
+<p>ethnicity of the student</p>
+</li>
+<li>
+<p>gender of the student</p>
+</li>
+<li>
+<p>year level</p>
+</li>
+<li>
+<p>room (the home room, if you like)</p>
+</li>
+<li>
+<p>caregiver names, phone numbers and addresses</p>
+</li>
+<li>
+<p>an indicator for the primary caregiver</p>
+</li>
+</ul>
+<p>No information is sent from Athenaeum to eTap.</p>
+<h3 id="bar-codes">Bar codes</h3>
+<p>Because the eTap student ID is guaranteed by eTap to be unique, this number is used as the bar code in Athenaeum. This is usually a 4 or 5 digit number.</p>
+<p>The “admin number”, which is of the format yy/nnn (2 digit year of entry followed by a / then followed by a number) is deprecated and eTap discourage its continued use. This number is only used when Athenaeum first marries up students in systems that used the admin number format for bar codes and changes the old bar code to the new format.</p>
+<p><img alt="eTap old and new bar code formats" src="../assets/img/etap_new_barcode.jpg" /></p>
+<h3 id="fields-used-by-etap">Fields used by eTap</h3>
+<p>When the data is loaded, eTap uses the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bar_code</td>
+<td>used by eTap to marry up the correct borrower to the student data</td>
+</tr>
+<tr>
+<td>active flag</td>
+<td>only used the first time eTap finds a new borrower</td>
+</tr>
+<tr>
+<td>gender</td>
+<td></td>
+</tr>
+<tr>
+<td>year</td>
+<td>year level of the student</td>
+</tr>
+<tr>
+<td>room</td>
+<td>home student</td>
+</tr>
+<tr>
+<td>ethnicity (custom 2)</td>
+<td>ethnicity of the student</td>
+</tr>
+<tr>
+<td>email 1</td>
+<td>email of the <em>primary</em> caregiver (unless a preference is set📌)</td>
+</tr>
+<tr>
+<td>email 2</td>
+<td>email(s) of the non-primary caregivers</td>
+</tr>
+<tr>
+<td>additional notes</td>
+<td>date updated by eTap, caregiver names and phone numbers, date of birth</td>
+</tr>
+<tr>
+<td>contact name full</td>
+<td>full name of the caregivers (combined)</td>
+</tr>
+<tr>
+<td>contact first name</td>
+<td>first name of the <em>primary</em> caregiver</td>
+</tr>
+<tr>
+<td>contact last name</td>
+<td>last (family) name of the <em>primary</em> caregiver</td>
+</tr>
+<tr>
+<td>address 1</td>
+<td>address 1 of the _primary_caregiver</td>
+</tr>
+<tr>
+<td>address 2</td>
+<td>address 2 of the _primary_caregiver</td>
+</tr>
+<tr>
+<td>address town</td>
+<td>town of the _primary_caregiver</td>
+</tr>
+</tbody>
+</table>
+<p><em>note</em> that the additional notes and contact name full fields are new fields</p>
+<p>You should not change the content of these fields, as they will be overwritten each evening and your changes will be lost.</p>
+<h3 id="the-primary-caregiver">The Primary Caregiver</h3>
+<p>In eTap, you define a primary caregiver. This person will be the contact in email address 1<sup id="fnref:📌"><a class="footnote-ref" href="#fn:📌">2</a></sup> and the caregiver details:</p>
+<p><img alt="email 1 details on the borrower tab" src="../assets/img/borrower_email1_caregiver1.jpg" /></p>
+<p><img alt="caregiver address details on the address tab" src="../assets/img/borrower_etap_caregiver_detail.png" /></p>
+<p>The subsequent caregiver(s) will be listed in email 2 and have their details briefly listed in the additional notes field for your reference.</p>
+<h4 id="preserving-email-1-field-for-student-email-addresses">Preserving email 1 field for student email addresses</h4>
+<p>Some schools will email students directly. However, you can only do this when one of the email fields are preserved. So to do this, you can go to a new setting in Admin-&gt;Customisation-Proxy/MARC and check the “combine emails to email 2” box.</p>
+<p>The synchronisation process will now not write to email 1, so anything you enter there (e.g. student email addresses) will not be overwritten each day.</p>
+<h3 id="triggering-the-synchronisation">Triggering the synchronisation</h3>
+<p>When you are set up, there will be nothing for you to do as the process will occur each day after school hours.</p>
+<p>However, you can trigger the process manually in admin when “SMS” is set to eTap and your MoE is entered by clicking the import button to the right:</p>
+<p><img alt="triggering eTap import manually" src="../assets/img/borrower_etap_trigger_import.png" /></p>
+<h3 id="identifying-new-borrowers">Identifying New Borrowers</h3>
+<p>When a new student is added to Athenaeum borrower list you will see the words added from eTap dd/mm/yyyy in the additional notes field:</p>
+<p><img alt="added by eTap noted added to the borrower additional notes field" src="../assets/img/borrower_etap_added_by_etap.png" /></p>
+<p>Note that this only appears on the day of update (and is overwritten the next day)</p>
+<p>Athenaeum also adds a message to the message tab briefly listing new borrowers.</p>
+<p><img alt="main menu eTap message advisory" src="../assets/img/borrwer_etap_messages.png" /></p>
+<p>In an <em>unsorted</em> list of borrowers, the new borrowers are always at the end.</p>
+<h3 id="identifying-left-borrowers">Identifying “Left” borrowers</h3>
+<p>Because we only receive a list of <em>current</em> students from eTap, we have to make an assumption about students who have left the school.</p>
+<p>That is, if a borrower is not in the feed, they are either:</p>
+<ul>
+<li>
+<p>a student who has left</p>
+</li>
+<li>
+<p>a staff member</p>
+</li>
+<li>
+<p>a class set</p>
+</li>
+</ul>
+<p>Now, because eTap “owns” the field called additional notes, etap will overwrite it every night…so don’t enter any text into this field because you will lose it.</p>
+<p>So what the eTap import process does, before importing, is mark every borrower in Athenaeum (left/staff/class sets/etc.) with “not updated by eTap”.</p>
+<p>After the import, you can simply find students who have “not updated by eTap” in the additional notes field and make a judgement call on whether they have left and need to be deactivated or whether there was an issue with the feed.</p>
+<div class="language-text highlight"><pre><span></span><code>you can simply ignore the note in the staff records.
+</code></pre></div>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<ul>
+<li>
+<p>you can add a new token for use in letters to extract the “caregiver full name” field (this is not loaded by default and only needs to be loaded once)</p>
+</li>
+<li>
+<p>the additional notes field is <em>not</em> searched by default when using the quick search box at the top of the borrower list</p>
+</li>
+<li>
+<p>any mistakes made by adminstration in email (e.g. spelling mistakes) will be shared with Athenaeum. The only way to fix these is to have the mistakes corrected in eTap. Mistakes happen! So do corrections 🤓.</p>
+</li>
+<li>
+<p>if there are no primary caregivers specified in eTap, then caregiver details will be combined into email 2 and the additional notes field</p>
+</li>
+<li>
+<p>sometimes, the data just isn't exactly the way you want it - however it is consistently not the way you want it! This is what you sometimes give up for automation!</p>
+</li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:GroupName">
+<p>These fields are so named because some school libraries don't use the terms "year" or "room" and public community libraries certainly don't use those terms.&#160;<a class="footnote-backref" href="#fnref:GroupName" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:📌">
+<p>see below for the exception&#160;<a class="footnote-backref" href="#fnref:📌" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../borrowers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Borrowers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Borrowers
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../circulation/" class="md-footer__link md-footer__link--next" aria-label="Next: Circulation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Circulation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 1996 - 2025 SumWare Consulting t/a Athenaeum Library Software
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

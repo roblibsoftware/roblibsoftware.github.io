@@ -1,0 +1,1909 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://librarysoftware.co.nz/docs/overdues/">
+      
+      
+        <link rel="prev" href="../due_dates/">
+      
+      
+        <link rel="next" href="../fees/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Overdues - Athenaeum documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overdues" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Athenaeum documentation" class="md-header__button md-logo" aria-label="Athenaeum documentation" data-md-component="logo">
+      
+  <img src="../assets/img/athenaeum_logo_tilted.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Athenaeum documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Overdues
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Athenaeum documentation" class="md-nav__button md-logo" aria-label="Athenaeum documentation" data-md-component="logo">
+      
+  <img src="../assets/img/athenaeum_logo_tilted.svg" alt="logo">
+
+    </a>
+    Athenaeum documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logging_in/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logging in
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting_started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Athenaeum structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../server_automation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Catalogue
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Catalogue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../libraries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Libraries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../catalogue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../addingitems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adding entries to the catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archiving/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Archiving (removing) from the catalogue
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../takingstock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taking Stock
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Search
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Search
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../searching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Desktop search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../searching_web/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web search and blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    The Blog
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            The Blog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Your blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../styling_the_blog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Styling the blog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Borrowers
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Borrowers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../borrowers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Borrowers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../borrower_import/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Importing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Circulation (issuing/returning)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Circulation (issuing/returning)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../circulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Circulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../issuing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issuing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../returning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Returning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../due_dates/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Due date calculations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Overdues
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Overdues
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Overdues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Overdues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-the-main-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      From the Main Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-circulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Circulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Recent" overdues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processing Overdues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processing Overdues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reportsletters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reports/Letters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports/Letters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default heading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Letters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    <span class="md-ellipsis">
+      email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-fees-in-bulk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add fees in bulk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daily-server-based-issue-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily Server based issue notifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Daily Server based issue notifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bulk return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      List borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-due-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the due dates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fees
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self_issuing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self Issuing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Output
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Output
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../letters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Letters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reports/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Miscellaneous
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Miscellaneous
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external_library_loans/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    External library loans
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Appendix
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Appendix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Internal fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../shortcuts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shortcuts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Finding Overdues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Finding Overdues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#from-the-main-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      From the Main Menu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-circulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Circulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recent-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      "Recent" overdues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manual-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Search
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#processing-overdues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Processing Overdues
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processing Overdues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reportsletters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reports/Letters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reports/Letters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-heading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default heading
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#letters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Letters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#email" class="md-nav__link">
+    <span class="md-ellipsis">
+      email
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-fees-in-bulk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add fees in bulk
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#daily-server-based-issue-notifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Daily Server based issue notifications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Daily Server based issue notifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bulk return
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-borrowers" class="md-nav__link">
+    <span class="md-ellipsis">
+      List borrowers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adjust-the-due-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adjust the due dates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="overdues">Overdues</h1>
+<p>Overdue items are those that have been issued and are due before the current date. When you find your overdues, you can generate a variety of reports or letters from those found records.</p>
+<p>The general concept is:</p>
+<ul>
+<li>find the desired overdue records</li>
+<li>perform an action such as print a report (such as an overdue list grouped by class) or create and send overdue letters by email.</li>
+</ul>
+<h2 id="finding-overdues">Finding Overdues</h2>
+<p>There are multiple methods to find overdue items</p>
+<h3 id="from-the-main-menu">From the Main Menu</h3>
+<p>Click Reports-&gt;Overdue button at the top right and choose one of the common overdue reporting options.</p>
+<p><img alt="main menu reports menu - note your menu may look different if you don't use a fiscal year option" src="../assets/img/menu_reports_overdue.png" /></p>
+<p>Or, if you have configured your Main Menu buttons to include an "Overdue" button, then click that.</p>
+<p><img alt="main menu configured with an overdue button" src="../assets/img/menu_overdue_button.png" /></p>
+<h3 id="from-circulation">From Circulation</h3>
+<p>Click Filter-&gt;Overdue at the top of the circulation list</p>
+<p><img alt="filtering for overdues in circulation" src="../assets/img/circulation_filter_overdue.png" /></p>
+<h2 id="recent-overdues">"Recent" overdues</h2>
+<p>Athenaeum can find “Recent overdues" and “Less recent overdues" under the circulation filter button.</p>
+<p>“Recent overdues” are items that are overdue by no more than the value you enter here in the preferences:</p>
+<p><img alt="recent overdue preference" src="../assets/img/admin_issues_recent.png" /></p>
+<p>“Less recent overdues” are items that are overdue by more than the value you enter here.</p>
+<p>These options simplify the task of sending different overdue notices depending upon how overdue items are.</p>
+<h2 id="manual-search">Manual Search</h2>
+<p>As with most other areas of Athenaeum, you can manually search for issues that are overdue by the criteria you specify.</p>
+<ul>
+<li>Go to Circulation</li>
+<li>Click the Find button at the top</li>
+<li>Enter search criteria matching your desired overdue definition</li>
+<li>Click the Find button again or press the Enter key</li>
+</ul>
+<p><img alt="manually finding overdues" src="../assets/img/circulation_manual_find_overdue.png" /></p>
+<p>This search works like other detailed searches in Athenaeum as you can perform very simple searches, create powerful compound searches using multiple criteria with boolean "OR", "AND" and "NOT".</p>
+<h2 id="processing-overdues">Processing Overdues</h2>
+<p>When you have found the overdues using one of the options described above, you have a "found set"<sup id="fnref:fn"><a class="footnote-ref" href="#fn:fn">1</a></sup> of overdue records.</p>
+<p>With that found set of overdues, you might:</p>
+<ul>
+<li>send letters<ul>
+<li>warning letters</li>
+<li>overdue letters</li>
+<li>recall letters</li>
+<li>advisory issue lists</li>
+</ul>
+</li>
+<li>print report</li>
+<li>add late fees in bulk</li>
+<li>bulk return</li>
+<li>list borrowers and de-activate them or</li>
+<li>adjust the dates so that the items are not overdue</li>
+</ul>
+<h3 id="reportsletters">Reports/Letters</h3>
+<p>The various print reports and letters can be found in the Print menu and can output to paper or PDF.</p>
+<p><img alt="print menu" src="../assets/img/circulation_print_menu.png" /></p>
+<p>When you run one of these reports or letters, the output is first previewed to screen allowing you to check the output. Press the Enter key on the keyboard to continue to the Print dialog box. When that is displayed, pressing Enter will print. Pressing Esc (escape) will cancel the print.</p>
+<p>These are:</p>
+<dl>
+<dt>Include cover images/Won't include cover images</dt>
+<dd>the printed reports will include cover images or will not allowing the printed reports to be more compact</dd>
+<dt>Print List as is</dt>
+<dd>maintains the current sort order and prints the details</dd>
+<dt>Issue Slips</dt>
+<dd>prints the list of issues as either fixed height slips or compact (variable height) slips. Compact slips are grouped either by borrower group 2 (e.g. "room" or "vertical form") or custom field 1 (e.g. "tutor group") with a page break between each grouping and where each "slip" is only as tall as is required to fit the information.</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The header line and message line are drawn from Admin-&gt;Letters "circulation slips header" and "circulation slips message"</p>
+<p>Fixed size slips are also sorted by custom field 2 with no additional page breaks. Each slip is a fixed height (7 lines) which makes the printed output suitable for guillotining in bulk to hand out to library patrons.</p>
+<p>Compact slips can optionally include the title cover image as well as the replacement cost (these are not available on the fixed size slips)</p>
+</div>
+<dl>
+<dt>By borrower "group 1" (e.g. "year")</dt>
+<dd>creates a printed report grouping issues by borrower group 1 (using the name defined in admin), sorting the list by group 1 and borrower name with a page break on each group</dd>
+<dt>By borrower "group 2" (e.g. "room" or "vertical form")</dt>
+<dd>creates a printed report grouping issues by borrower group 2 (using the name defined in admin), sorting the list by group 2 and borrower name with a page break on each group</dd>
+<dt>By borrower "custom 1" (e.g. Tutor Group)</dt>
+<dd>creates a printed report grouping issues by borrower custom field 1 (using the name defined in admin), sorting the list by custom 1 and borrower name with a page break on each group</dd>
+<dt>By Location</dt>
+<dd>groups the report by location of each copy in the library, with a page break for each location - useful when you want to go hunting for items put back on shelves and not returned</dd>
+<dt>Due Date</dt>
+<dd>reports the found set of issues sorting by date the borrower - there are no page breaks between dates.</dd>
+<dt>Borrower</dt>
+<dd>A continuous listing of the found set of issues, each issue grouped by borrower, sorted alphabetically then by due date.</dd>
+<dt>Borrower issue count only</dt>
+<dd>produces a report of the found set of borrowers, grouped either by "group 2" (e.g."room" or "vertical form") or by "custom 1" (e.g. "Tutor group"), showing the name of the borrower, their number of issues and the number of those issues that are overdue. This report explicitly does not include the titles of the items for privacy reasons.</dd>
+<dt>Borrower with overdue header</dt>
+<dd>a pseudo letter, one page per borrower listing the borrower's issues. At the top of each page is the text retrieved from the template called "borrower_overdue_header". This text does <strong>NOT</strong> substitute tokens, it is just plain text.</dd>
+<dt>Borrower with recall header</dt>
+<dd>a pseudo letter as for the "borrower with overdue header", one page per borrower listing the borrower's issues. At the top of each page is the text retrieved from the template called "borrower_recall_header". This text does <strong>NOT</strong> substitute tokens, it is just plain text.</dd>
+<dt>Borrower with custom header</dt>
+<dd>a pseudo letter, one page per borrower listing the borrower's issues. At the top of each page is the text retrieved from the template called "borrower_custom_header". This text does <strong>NOT</strong> substitute tokens, it is just plain text.</dd>
+</dl>
+<h4 id="tips">Tips</h4>
+<p>Headings for Print List as is, by borrower..., by location, due date can be changed.</p>
+<h5 id="default-heading">Default heading</h5>
+<p>For example: you can specify a default heading for some of the issue list reports in the Issues tab of Admin</p>
+<p><img alt="defaut heading for circulation reports" src="../assets/img/circulation_report_default_heading.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>hold the shift key when starting the above listed reports to specify a heading different to the default heading</p>
+</div>
+<p>The short content of the Issue Slips (or circulation slips) is set in Admin-&gt;Issues:</p>
+<p><img alt="set content for circulation slips" src="../assets/img/circulation_slips_set_content.png" /></p>
+<h3 id="letters">Letters</h3>
+<p><img alt="circulation letter menu" src="../assets/img/circulation_letter_menu.png" /></p>
+<dl>
+<dt>Overdue Letters</dt>
+<dd>generates letters that can be printed using the wording from letter template "Overdue from Circulation"</dd>
+<dt>Overdue Strong</dt>
+<dd>generates letters that can be printed using the wording from letter template "Overdue Strong"</dd>
+<dt>Recall Detailed</dt>
+<dd>generates letters that can be printed using the wording from letter template "Recall Detailed"</dd>
+<dt>Create Issued List Letters to group2</dt>
+<dd>creates letters that can be printed or emailed, one letter per "group2" (e.g. Room). The addressee for each group2 is defined in borrower-&gt;utility-&gt;list group2. The format of the letter is defined by the "room_issue_list" template.</dd>
+<dt>Create Overdue Letters to group2</dt>
+<dd>creates letters that can be printed or emailed, one letter per "group2" (e.g. Room). The addressee for each group2 is defined in borrower-&gt;utility-&gt;list group2. The format of the letter is defined by the "room_overdue_list" template.</dd>
+</dl>
+<h3 id="email">email</h3>
+<p><img alt="email menu" src="../assets/img/circulation_emai_menu.png" /></p>
+<p>The email reports will sort the list by borrower and email each borrower's listing to email 1 or 2 as chosen.</p>
+<h3 id="add-fees-in-bulk">Add fees in bulk</h3>
+<p>Now you have found the set of overdue circulation records you wish to process, you might choose to add a fee to them.</p>
+<p>Do this with Circulation-&gt;Utility-&gt;Add fees to XX issues:</p>
+<p><img alt="add bulk fee" src="../assets/img/circulation_utility_add_bulk_fee.png" /></p>
+<p>Confirm the amount (a flat fee or the replacement fee) and enter a fee reason at the next dialogue.</p>
+<p><img alt="specifing the bulk fee detail" src="../assets/img/circulation_utility_add_bulk_fee_dialog.png" /></p>
+<p><em>note:</em> an issue may have multiple fees associated with it - if you so desire</p>
+<h2 id="daily-server-based-issue-notifications">Daily Server based issue notifications</h2>
+<p>If you are running the recommended configuration of hosted Athenaeum or Athenaeum with FileMaker Server, you may configure automated email notification of issues that are due, overdue or nearly due.</p>
+<p>This is covered in more detail in the automation chapter.</p>
+<h3 id="bulk-return">Bulk return</h3>
+<p>You can bulk return a found set of issues using command-&gt;Return these X issues</p>
+<p><img alt="bulk return" src="../assets/img/circulation_bulk_return.png" /></p>
+<p>This is a quick way to effect their return. Athenaeum will process each issue and take any action you have defined in Admin, such as levying fees.</p>
+<h3 id="list-borrowers">List borrowers</h3>
+<p>Find any set of issues and then list the borrowers for those issues.</p>
+<p><img alt="listing the borrowers from the found set of circulation records" src="../assets/img/circulation_list_in_borrower.png" /></p>
+<p>You can then manipulate the borrower records such as changing the status of the borrowers (e.g. setting them to a restricted borrower type), de-activating the borrowers or generating letters.</p>
+<h3 id="adjust-the-due-dates">Adjust the due dates</h3>
+<p>Reset the due dates for the <em>found set</em> of issues by choosing command-&gt;reset these issues:</p>
+<p><img alt="reset due dates for a found set of circulation records" src="../assets/img/circulation_reset_due_dates.png" /></p>
+<p>You might do this to make the found set of issues NOT overdue for whatever reason you see fit or to extend the issues of the same issues without using the Extend function (which increments the number of extensions allowed for each issue). As the library administrator, you can ultimately always tell Athenaeum what you want it to do!</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:fn">
+<p>the found set is used repeatedly in Athenaeum - we highly recommend you learn this concept, as it controls many aspects of reporting&#160;<a class="footnote-backref" href="#fnref:fn" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../due_dates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Due date calculations">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Due date calculations
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../fees/" class="md-footer__link md-footer__link--next" aria-label="Next: Fees">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Fees
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 1996 - 2025 SumWare Consulting t/a Athenaeum Library Software
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "navigation.instant", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

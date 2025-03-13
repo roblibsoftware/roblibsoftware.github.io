@@ -1,0 +1,169 @@
+/*
+ * Base structure
+ */
+
+@page {
+  size: A4;
+  margin: 2cm ;
+  orphans:4;
+  widows:2;
+  font-size: 9pt;
+    border-top: thin gray solid;
+ 
+	@top-right {
+        content: "Athenaeum Pro 2016";
+        vertical-align: bottom;
+    }
+  @bottom {
+  	content: string(chapter-title);
+  }
+
+  @bottom-right {
+    content: "Page " counter(page);
+  }
+}
+
+@page :first {
+    margin-top: 45%;
+    @top-right { content: normal; }
+    @bottom-right { content: normal; }
+    @bottom { content: normal; }
+    border: none;
+ 
+}
+
+body {
+	font-size: large;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+
+	p, pre, blockquote {
+    	page-break-inside: avoid;
+	}
+
+img {
+    max-width:10cm;
+    height:auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+section {
+	page-break-before: always;
+	}
+
+h1 {
+	font-size: 18pt;
+	string-set: chapter-title content();
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+h3,h4 {
+	font-size: 12pt;
+}
+
+p {
+	page-break-inside: avoid ;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+img {
+    max-width:12cm;
+    height:auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 21px;
+	page-break-before: avoid ;
+}
+
+table {
+	border: 1px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-color: #CCCCCC;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+	background-color: #EEE;
+}
+
+th {
+	text-align: center;
+	background-color: #4CAF50;
+	color: white;
+	padding: 8px;
+
+}
+
+td {	
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+
+.center-block {
+	display:block;
+	margin-right:auto;
+	margin-left:auto
+}
+
