@@ -834,6 +834,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#basic-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#import-generic-csv-data" class="md-nav__link">
     <span class="md-ellipsis">
       Import generic CSV data
@@ -1464,6 +1473,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#basic-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Fields
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#import-generic-csv-data" class="md-nav__link">
     <span class="md-ellipsis">
       Import generic CSV data
@@ -1650,12 +1668,109 @@
 <p>As described earlier, borrowers can be any entity to whom you issue items, in accordance with your library policy. Students, Teachers, Rooms, Other Libraries.</p>
 <p>While manually entering borrowers is one way, importing data from a variety of sources is much quicker.</p>
 <p>Imports are generally performed while viewing the list of borrowers and clicking the Utility button (or pressing "u" on the keyboard), clicking the Manipulate/utility tab and the choosing your import.</p>
+<p>You will import the basic data and then adjust some settings such as the borrower type (which can be done in bulk, of course).</p>
 <p><img alt="borrower utility import tab" src="../assets/img/borrower_utility_import_tab.png" /></p>
 <p>Athenaeum can import generic CSV (comma separated value) files and can also import particular CSV files from a number of common New Zealand based student management systems.</p>
+<h2 id="basic-fields">Basic Fields</h2>
+<p>There are many fields available for borrower information. However, the suggested minimum fields are:</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td>a unique code for that borrower that becomes their bar code (this should be consistent over multiple imports as it is used to marry up to existing borrowers)</td>
+</tr>
+<tr>
+<td>first name</td>
+<td></td>
+</tr>
+<tr>
+<td>last name</td>
+<td>the family name of the borrower</td>
+</tr>
+<tr>
+<td>preferred name</td>
+<td>(optional) can be used if different to the first name</td>
+</tr>
+<tr>
+<td>group 1</td>
+<td>in schools, this is usually the "Year" level</td>
+</tr>
+<tr>
+<td>group 2</td>
+<td>in schools, this is usually the "home room" or "whanau" or "tutor group" (etc.)</td>
+</tr>
+<tr>
+<td>email</td>
+<td>(optional and helpful)</td>
+</tr>
+</tbody>
+</table>
+<p>Athenaeum also has extra fields available should you choose to use them:</p>
+<table>
+<thead>
+<tr>
+<th>field</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gender</td>
+<td>(optional) useful if analysing issues by gender</td>
+</tr>
+<tr>
+<td>ethnicity</td>
+<td>(optional)</td>
+</tr>
+<tr>
+<td>custom 1</td>
+<td></td>
+</tr>
+<tr>
+<td>custom 2</td>
+<td></td>
+</tr>
+<tr>
+<td>custom 3</td>
+<td></td>
+</tr>
+<tr>
+<td>custom 4</td>
+<td></td>
+</tr>
+<tr>
+<td>contact name first</td>
+<td></td>
+</tr>
+<tr>
+<td>contact name last</td>
+<td></td>
+</tr>
+<tr>
+<td>address fields 1 to 4 plus postcode</td>
+<td></td>
+</tr>
+<tr>
+<td>contact phone number</td>
+<td></td>
+</tr>
+<tr>
+<td>optional log in account</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="import-generic-csv-data">Import generic CSV data</h2>
 <p>Will allow you to import a CSV file into Athenaeum which will then match the data using the bar code and load into the borrower table.</p>
+<p>The data required to be imported is relatively minimal.</p>
 <p>When you click the import button and choose your file, you are presented with an "import mapping" dialog box. This allows you to align (map) the fields (columns) in the CSV file to the target fields in Athenaeum.</p>
-<p><img alt="Borrower Import map" src="../assets/img/borrower_import_map.png" /> </p>
+<p><img alt="Borrower Import map" src="../assets/img/borrower_import_map.png" /></p>
 <p>There is quite a lot going on with this window and this flexibility allows us to process different kinds of CSV files.</p>
 <p>On the right is the mapping of the import data to the field names in Athenaeum.</p>
 <p>At to top, you can choose to "Add" the data - which is the normal action in these scripted import actions.</p>
